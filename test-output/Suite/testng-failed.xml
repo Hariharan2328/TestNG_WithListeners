@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="qa.impListeners.utils.MyAnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" verbose="5" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="qa.impListeners.testcases.TC002_CreateLead_Incorrectusername">
+        <methods>
+          <include name="setTestProperties"/>
+          <include name="openBrowser"/>
+          <include name="close"/>
+          <include name="closeReporter"/>
+          <include name="createNewLead2"/>
+          <include name="createTestInReporter"/>
+          <include name="createReporter"/>
+        </methods>
+      </class> <!-- qa.impListeners.testcases.TC002_CreateLead_Incorrectusername -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
